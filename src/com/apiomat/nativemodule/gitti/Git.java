@@ -54,6 +54,7 @@ public class Git extends com.apiomat.nativemodule.AbstractClientDataModel<com.ap
     public static final String MODEL_NAME = "Git";
 
     /** class specific attributes */
+    private String greeting = null;
     /**
      * Protected constructor; to create a new instance, use the createObject() method
      */
@@ -76,6 +77,16 @@ public class Git extends com.apiomat.nativemodule.AbstractClientDataModel<com.ap
     public String getModelName( )
     {
         return MODEL_NAME;
+    }
+
+    public String getGreeting()
+    {
+         return this.greeting;
+    }
+
+    public void setGreeting( String arg )
+    {
+        this.greeting = arg;
     }
 
 }
